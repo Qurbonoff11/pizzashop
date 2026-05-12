@@ -5,3 +5,4 @@ export { default as EventsPage } from './EventsPage';
 export { default as AboutUsPage } from "./AboutUsPage"
 export { default as LoginPage } from './LoginPage';
 export { default as ErrorPage } from './ErrorPage';
+export { default as HomeLayout } from '../layouts/HomeLayout';

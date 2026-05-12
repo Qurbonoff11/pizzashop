@@ -1,5 +1,13 @@
-import { createBrowserRouter } from "react-router-dom";
-import { LandingPage, ErrorPage, HomeLayout, MenuPage, EventsPage, AboutUsPage } from "./pages";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  LandingPage,
+  ErrorPage,
+  HomeLayout,
+  MenuPage,
+  EventsPage,
+  AboutUsPage,
+  LoginPage,
+} from "./pages";
 
 const route = createBrowserRouter([
   {
@@ -25,10 +33,14 @@ const route = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "/login",
+    element: <LoginPage />,
+  },
 ]);
 
 const App = () => {
-  return <></>;
+  return <RouterProvider router={route} />;
 };
 
 export default App;
