@@ -1,8 +1,16 @@
+import { LandingBanner } from "../assets";
+import LandingDesc from "../components/LandingDesc";
+
 const LandingPage = () => {
   return (
-    <div className="bg-[#1F0800] ">
-      <h1 className="text-white">Welcome to Pizza Shop</h1>
-    </div>
+    <>
+      <section className="container mx-auto h-screen flex items-center justify-center">
+        <LandingDesc />
+        <div>
+          <img src={LandingBanner} alt="Landing page banner"/>
+        </div>
+      </section>
+    </>
   );
 };
 
