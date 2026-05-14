@@ -10,7 +10,7 @@ const LandingDesc = () => {
       transition={{ duration: 0.8 }}
     >
       <motion.h1
-        className="font-ubuntu text-7xl font-black text-white w-4/6 leading-tight"
+        className="font-ubuntu text-7xl font-black text-white w-5/8 leading-tight"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.2, duration: 0.8 }}

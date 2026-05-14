@@ -6,3 +6,8 @@
   --font-ubuntu: "Ubuntu", sans-serif;
 }
 
+@layer base {
+  ::selection {
+    @apply bg-linear-tr from-[#FF6432] to-[#FFA228] text-white;
+  }
+}
