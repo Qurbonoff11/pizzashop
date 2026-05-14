@@ -20,17 +20,16 @@ const NavLinks = () => {
                 transition={{ duration: 0.2 }}
                 className={`relative font-ubuntu font-medium text-base transition-all duration-300 ${
                   isActive
-                    ? "bg-gradient-to-r from-[#FFA228] to-[#FF6432] bg-clip-text text-transparent"
+                    ? "bg-linear-to-r from-[#FFA228] to-[#FF6432] bg-clip-text text-transparent"
                     : "text-[#A3A3A3] hover:text-white"
                 }`}
               >
                 {text}
 
-                {/* Active underline dot */}
                 {isActive && (
                   <motion.span
                     layoutId="activeNavDot"
-                    className="absolute left-1/2 -bottom-2 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#FFA228] to-[#FF6432]"
+                    className="absolute left-1/2 -bottom-2 w-1.5 h-1.5 rounded-full bg-linear-to-r from-[#FFA228] to-[#FF6432]"
                     style={{ x: "-50%" }}
                     transition={{
                       type: "spring",
