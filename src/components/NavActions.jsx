@@ -1,18 +1,37 @@
+import { motion } from "framer-motion";
 import { FaOpencart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const NavActions = () => {
   return (
-    <div className="flex gap-2">
-      <Link
-        to="/login"
-        className="bg-linear-to-r from-[#FFA228] to-[#FF6432] px-9 py-0.5 rounded-full text-white font-medium font-ubuntu"
+    <div className="flex items-center gap-3">
+      {/* Login Button */}
+      <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+        <Link
+          to="/login"
+          className="inline-block bg-gradient-to-r from-[#FFA228] to-[#FF6432] px-8 py-2 rounded-full text-white font-medium font-ubuntu shadow-lg shadow-orange-500/20 hover:shadow-orange-500/40 transition-all duration-300"
+        >
+          Login
+        </Link>
+      </motion.div>
+
+      {/* Cart Button */}
+      <motion.button
+        whileHover={{
+          scale: 1.1,
+          rotate: 8,
+          boxShadow: "0px 0px 20px rgba(255, 162, 40, 0.45)",
+        }}
+        whileTap={{ scale: 0.9 }}
+        className="relative bg-gradient-to-r from-[#FFA228] to-[#FF6432] p-3 rounded-full text-white shadow-lg shadow-orange-500/20 hover:shadow-orange-500/40 transition-all duration-300 cursor-pointer"
       >
-        Login
-      </Link>
-      <button className="bg-linear-to-r from-[#FFA228] to-[#FF6432] p-2 rounded-full text-white font-medium font-ubuntu cursor-pointer">
-        <FaOpencart />
-      </button>
+        <FaOpencart className="text-xl" />
+
+        {/* Optional cart badge */}
+        <span className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-white text-[#FF6432] text-xs font-bold flex items-center justify-center">
+          2
+        </span>
+      </motion.button>
     </div>
   );
 };

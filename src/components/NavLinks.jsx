@@ -1,39 +1,46 @@
-import { nanoid } from "nanoid";
+import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
 const links = [
-  {
-    text: "Home",
-    path: "/",
-  },
-  {
-    text: "Menu",
-    path: "/menu",
-  },
-  {
-    text: "Events",
-    path: "/events",
-  },
-  {
-    text: "About Us",
-    path: "/about",
-  },
+  { text: "Home", path: "/" },
+  { text: "Menu", path: "/menu" },
+  { text: "Events", path: "/events" },
+  { text: "About Us", path: "/about" },
 ];
 
 const NavLinks = () => {
   return (
-    <ul className="flex gap-6">
+    <ul className="flex items-center gap-8">
       {links.map(({ text, path }) => (
-        <li key={nanoid()} className="relative">
-          <NavLink
-            to={path}
-            className={({ isActive }) =>
-              isActive
-                ? "font-medium font-ubuntu bg-linear-to-tr from-[#FFA228] to-[#FF6432] bg-clip-text text-transparent before:content-[''] before:absolute before:w-1.5 before:h-1.5 before:bg-linear-to-tr before:from-[#FFA228] before:to-[#FF6432] before:rounded-full before:-bottom-1.5 before:left-0 before:right-0 before:mx-auto duration-300"
-                : "font-medium font-ubuntu bg-[#A3A3A3] bg-clip-text text-transparent duration-300 hover:bg-linear-to-tr hover:from-[#FFA228] hover:to-[#FF6432] hover:bg-clip-text hover:text-transparent transition-all"
-            }
-          >
-            {text}
+        <li key={path} className="relative">
+          <NavLink to={path}>
+            {({ isActive }) => (
+              <motion.div
+                whileHover={{ y: -2 }}
+                transition={{ duration: 0.2 }}
+                className={`relative font-ubuntu font-medium text-base transition-all duration-300 ${
+                  isActive
+                    ? "bg-gradient-to-r from-[#FFA228] to-[#FF6432] bg-clip-text text-transparent"
+                    : "text-[#A3A3A3] hover:text-white"
+                }`}
+              >
+                {text}
+
+                {/* Active underline dot */}
+                {isActive && (
+                  <motion.span
+                    layoutId="activeNavDot"
+                    className="absolute left-1/2 -bottom-2 w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#FFA228] to-[#FF6432]"
+                    style={{ x: "-50%" }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 500,
+                      damping: 30,
+                    }}
+                  />
+                )}
+              </motion.div>
+            )}
           </NavLink>
         </li>
       ))}
