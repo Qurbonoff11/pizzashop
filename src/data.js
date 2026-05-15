@@ -1,3 +1,13 @@
+import {
+  ChickenBBQ,
+  FourCheese,
+  MushroomDelight,
+  Pepperoni,
+  SeaPizza,
+  ShrimpSpecial,
+  SpicyBeef,
+} from "./assets";
+
 export const pizzas = [
   {
     id: 1,
@@ -14,7 +24,7 @@ export const pizzas = [
     category: "meat",
     ingredients: ["Pepperoni", "Cheese", "Tomato sauce"],
     price: 15.99,
-    image: "/src/assets/img/Pizzas/Pepperoni.png",
+    image: Pepperoni,
     count: 1,
   },
   {
@@ -23,7 +33,7 @@ export const pizzas = [
     category: "meat",
     ingredients: ["Chicken", "BBQ sauce", "Onion"],
     price: 16.99,
-    image: "/src/assets/img/Pizzas/ChickenBBQ.png",
+    image: ChickenBBQ,
     count: 1,
   },
   {
@@ -32,7 +42,7 @@ export const pizzas = [
     category: "sea",
     ingredients: ["Shrimp", "Squid", "Cheese"],
     price: 18.99,
-    image: "/src/assets/img/Pizzas/SeaPizza.png",
+    image: SeaPizza,
     count: 1,
   },
   {
@@ -41,7 +51,7 @@ export const pizzas = [
     category: "mushroom",
     ingredients: ["Mushroom", "Mozzarella", "Cream sauce"],
     price: 13.5,
-    image: "/src/assets/img/Pizzas/MushroomDelight.png",
+    image: MushroomDelight,
     count: 1,
   },
   {
@@ -50,7 +60,7 @@ export const pizzas = [
     category: "meat",
     ingredients: ["Beef", "Chili", "Cheese", "Onion"],
     price: 17.25,
-    image: "/src/assets/img/Pizzas/SpicyBeef.png",
+    image: SpicyBeef,
     count: 1,
   },
   {
@@ -59,7 +69,7 @@ export const pizzas = [
     category: "vegetarian",
     ingredients: ["Mozzarella", "Cheddar", "Parmesan", "Gorgonzola"],
     price: 14.99,
-    image: "/src/assets/img/Pizzas/FourCheese.png",
+    image: FourCheese,
     count: 1,
   },
   {
@@ -68,7 +78,7 @@ export const pizzas = [
     category: "sea",
     ingredients: ["Shrimp", "Garlic", "Cheese", "Lemon"],
     price: 19.5,
-    image: "/src/assets/img/Pizzas/ShrimpSpecial.png",
+    image: ShrimpSpecial,
     count: 1,
   },
 ];
