@@ -6,6 +6,7 @@ import {
   SeaPizza,
   ShrimpSpecial,
   SpicyBeef,
+  Margherita,
 } from "./assets";
 
 export const pizzas = [
@@ -15,7 +16,7 @@ export const pizzas = [
     category: "vegetarian",
     ingredients: ["Tomato", "Mozzarella", "Basil"],
     price: 12.99,
-    image: "/src/assets/img/Pizzas/Margherita.png",
+    image: Margherita,
     count: 1,
   },
   {

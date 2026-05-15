@@ -32,6 +32,7 @@ const CardGrid = ({ data }) => {
             <motion.img
               src={pizza.image}
               alt={pizza.name}
+              loading="lazy"
               className="h-52 w-full object-cover"
               whileHover={{
                 scale: 1.12,
