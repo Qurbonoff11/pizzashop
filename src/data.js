@@ -38,7 +38,7 @@ export const pizzas = [
   {
     id: 5,
     name: "Mushroom Delight",
-    category: "vegetarian",
+    category: "mushroom",
     ingredients: ["Mushroom", "Mozzarella", "Cream sauce"],
     price: 13.5,
     image: "/src/assets/img/Pizzas/MushroomDelight.png",

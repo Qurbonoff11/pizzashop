@@ -16,7 +16,6 @@ const Header = () => {
       }}
     >
       <nav className="container mx-auto flex items-center justify-between px-4 py-6">
-        {/* Logo */}
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
           <Link to="/" className="block">
             <motion.img
@@ -35,10 +34,8 @@ const Header = () => {
           </Link>
         </motion.div>
 
-        {/* Navigation Links */}
         <NavLinks />
 
-        {/* Actions */}
         <NavActions />
       </nav>
     </motion.header>
