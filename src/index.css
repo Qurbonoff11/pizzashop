@@ -8,6 +8,6 @@
 
 @layer base {
   ::selection {
-    @apply bg-linear-tr from-[#FF6432] to-[#FFA228] text-white;
+    @apply bg-gradient-to-r from-[#FF6432] to-[#FFA228] text-white;
   }
 }
