@@ -5,7 +5,7 @@ export const pizzas = [
     category: "vegetarian",
     ingredients: ["Tomato", "Mozzarella", "Basil"],
     price: 12.99,
-    image: "/images/margherita.jpg",
+    image: "/src/assets/img/Pizzas/Margherita.png",
     count: 1,
   },
   {
@@ -14,7 +14,7 @@ export const pizzas = [
     category: "meat",
     ingredients: ["Pepperoni", "Cheese", "Tomato sauce"],
     price: 15.99,
-    image: "/images/pepperoni.jpg",
+    image: "/src/assets/img/Pizzas/Pepperoni.png",
     count: 1,
   },
   {
@@ -23,7 +23,7 @@ export const pizzas = [
     category: "meat",
     ingredients: ["Chicken", "BBQ sauce", "Onion"],
     price: 16.99,
-    image: "/images/bbq.jpg",
+    image: "/src/assets/img/Pizzas/ChickenBBQ.png",
     count: 1,
   },
   {
@@ -32,7 +32,7 @@ export const pizzas = [
     category: "sea",
     ingredients: ["Shrimp", "Squid", "Cheese"],
     price: 18.99,
-    image: "/images/sea.jpg",
+    image: "/src/assets/img/Pizzas/SeaPizza.png",
     count: 1,
   },
   {
@@ -41,7 +41,7 @@ export const pizzas = [
     category: "vegetarian",
     ingredients: ["Mushroom", "Mozzarella", "Cream sauce"],
     price: 13.5,
-    image: "/images/mushroom.jpg",
+    image: "/src/assets/img/Pizzas/MushroomDelight.png",
     count: 1,
   },
   {
@@ -50,7 +50,7 @@ export const pizzas = [
     category: "meat",
     ingredients: ["Beef", "Chili", "Cheese", "Onion"],
     price: 17.25,
-    image: "/images/beef.jpg",
+    image: "/src/assets/img/Pizzas/SpicyBeef.png",
     count: 1,
   },
   {
@@ -59,7 +59,7 @@ export const pizzas = [
     category: "vegetarian",
     ingredients: ["Mozzarella", "Cheddar", "Parmesan", "Gorgonzola"],
     price: 14.99,
-    image: "/images/four-cheese.jpg",
+    image: "/src/assets/img/Pizzas/FourCheese.png",
     count: 1,
   },
   {
@@ -68,7 +68,7 @@ export const pizzas = [
     category: "sea",
     ingredients: ["Shrimp", "Garlic", "Cheese", "Lemon"],
     price: 19.5,
-    image: "/images/shrimp.jpg",
+    image: "/src/assets/img/Pizzas/ShrimpSpecial.png",
     count: 1,
   },
 ];

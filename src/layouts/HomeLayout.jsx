@@ -6,7 +6,7 @@ const HomeLayout = () => {
   return (
     <>
       <Header />
-      <main className="h-screen bg-[#1F0800] relative overflow-hidden">
+      <main className="h-full bg-[#1F0800] relative overflow-hidden">
         <img
           src={Bgimg2}
           alt="background image select-none"

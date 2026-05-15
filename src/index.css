@@ -2,12 +2,52 @@
 
 @import "tailwindcss";
 
+html {
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 @theme {
   --font-ubuntu: "Ubuntu", sans-serif;
 }
 
 @layer base {
   ::selection {
-    @apply bg-gradient-to-r from-[#FF6432] to-[#FFA228] text-white;
+    background-color: #ff7a2f;
+    color: #ffffff;
+  }
+
+  ::-moz-selection {
+    background-color: #ff7a2f;
+    color: #ffffff;
+  }
+}
+
+@layer base {
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #120a08;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ffa228, #ff6432);
+    border-radius: 9999px;
+    border: 2px solid #120a08;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #ffb347, #ff7a3d);
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #ff7a3d #120a08;
   }
 }
